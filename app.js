@@ -46,7 +46,6 @@ function main() {
     const catErrors = JSON.parse(localStorage.getItem("catErrors"));
     renderLastCatsCodes(catErrors);
     catErrorImg.src = getCatImageByError(catErrors[0]);
-    console.log(catErrors);
   } else {
     catErrorImg.src = getCatImageByError("404");
   }
